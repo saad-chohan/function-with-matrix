@@ -4,170 +4,111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./final.js" defer></script>
     <title>Document</title>
 </head>
 <body>
-     <div class="1">
-    <input type="number" id="m1-1" >
-    <br>
-    <input type="number" id="m1-2">
-    <br>
-    <input type="number" id="m1-2">
-    <br>
-    <input type="number" id="m1-4">
-    <br>
-    <input type="number" id="m1-5">
-    <br>
-    <input type="number" id="m1-6">
-    <br>
-    <input type="number" id="m1-7">
-    <br>
-    <input type="number" id="m1-8">
-    <br>
-    <input type="number" id="m1-9">
+
+    <h1 style="text-align: center;">Matrix(A)</h1>
+    <div class="container">
+     <div id="div1">
+    <form class="" action="index.html" method="post">
+        <input type="number"  id="a_0_0" onclick="this.value = ''" /><br>
+        <input type="number"  id="a_1_0" onclick="this.value = ''" /><br>
+        <input type="number"  id="a_2_0" onclick="this.value = ''" /><br>
+        
+        
+    </form>
 </div> 
-<div class="2">
-    <input type="number" id="m2-1">
-    <input type="number" id="m2-2">
-    <input type="number" id="m2-2">
-    <input type="number" id="m2-4">
-    <input type="number" id="m2-5">
-    <input type="number" id="m2-6">
-    <input type="number" id="m2-7">
-    <input type="number" id="m2-8">
-    <input type="number" id="m2-9">
+<div id="div2">
+    <form class="" action="index.html" method="post">
+        <input type="number"  id="a_0_1" onclick="this.value = ''" /><br>
+        <input type="number"  id="a_1_1" onclick="this.value = ''" /><br>
+        <input type="number"  id="a_2_1" onclick="this.value = ''" /><br>
+        
+        
+    </form>
 </div> 
+<div id="div3">
+    <form class="" action="index.html" method="post">
+        <input type="number" id="a_0_2"   /><br>
+        <input type="number" id="a_1_2"   /><br>
+        <input type="number" id="a_2_2"   /><br>
+        
+        
+    </form>
+</div> 
+</div>
+
+
+<h1 style="text-align: center;">Matrix(B)</h1>
+<div class="container">
+    <div id="div1">
+   <form class="" action="index.html" method="post">
+       <input type="number"  id="b_0_0" onclick="this.value = ''" /><br>
+       <input type="number"  id="b_1_0" onclick="this.value = ''" /><br>
+       <input type="number"  id="b_2_0" onclick="this.value = ''" /><br>
+       
+       
+   </form>
+</div> 
+<div id="div2">
+   <form class="" action="index.html" method="post">
+       <input type="number"  id="b_0_1" onclick="this.value = ''" /><br>
+       <input type="number" id="b_1_1" onclick="this.value = ''" /><br>
+       <input type="number"  id="b_2_1" onclick="this.value = ''" /><br>
+       
+       
+   </form>
+</div> 
+<div id="div3">
+   <form class="" action="index.html" method="post">
+       <input type="number" id="b_0_2"   /><br>
+       <input type="number" id="b_1_2"   /><br>
+       <input type="number" id="b_2_2"   /><br>
+       
+       
+   </form>
+</div> 
+</div>
+
+<!-- <h1 style="text-align: center;">Result</h1>
+<div class="container">
+    <div id="div1">
+   <form class="" action="index.html" method="post">
+       <input type="text"  id="r_0_0" onclick="this.value = ''" /><br>
+       <input type="text"  id="r_1_0" onclick="this.value = ''" /><br>
+       <input type="text"  id="r_2_0" onclick="this.value = ''" /><br>
+       
+       
+   </form>
+</div> 
+<div id="div2">
+   <form class="" action="index.html" method="post">
+       <input type="text"  id="r_0_1" onclick="this.value = ''" /><br>
+       <input type="text"  id="r_1_1" onclick="this.value = ''" /><br>
+       <input type="text"  id="r_2_1" onclick="this.value = ''" /><br>
+       
+       
+   </form>
+</div> 
+<div id="div3">
+   <form class="" action="index.html" method="post">
+       <input type="text" id="r_0_2"   /><br>
+       <input type="text" id="r_1_2"   /><br>
+       <input type="text" id="r_2_2"   /><br>
+       
+       
+   </form>
+</div>  -->
+<h1 id="result">Result</h1>
+</div>
+<!-- <button class="button" onclick="append()">Append</button> -->
 <button class="button" onclick="add()">add</button>
-<button class="button" onclick="subtract()">subtract</button>
+<button class="button" onclick="sub()">subtract</button>
+<button class="button" onclick="mul()">Multipication</button>
+<button class="button" onclick="div()">division</button>
 </body>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script>
-    var i, j;
-     var arr1 = [
-     [1, 1, 1],
-     [1, 1, 1],
-     [1, 1, 1]
-    ];
-    var arr2 = [
-     [2, 2, 2],
-     [2, 2, 2],
-     [2, 2, 2]
-    ];
-    var arr3 = [
-     [0, 0, 0],
-     [0, 0, 0],
-     [0, 0, 0],
-    ];
-
-
-
-
-
-
-
-
-
-
-    // var arr1 = [
-    //  [1, 1, 1],
-    //  [1, 1, 1],
-    //  [1, 1, 1]
-    // ];
-    // var arr2 = [
-    //  [2, 2, 2],
-    //  [2, 2, 2],
-    //  [2, 2, 2]
-    // ];
-    // var arr3 = [
-    //  [0, 0, 0],
-    //  [0, 0, 0],
-    //  [0, 0, 0],
-    // ];
-    
-    document.write("Matrix A (3 x 3):<br>");
-    for(i=0; i<3; i++)
-    {
-     for(j=0; j<3; j++)
-      document.write(arr1[i][j] +" ");
-     document.write("<br>");
-    }
-    
-    document.write("Matrix B (3 x 3):<br>");
-    for(i=0; i<3; i++)
-    {
-     for(j=0; j<3; j++)
-      document.write(arr2[i][j] +" ");
-     document.write("<br>");
-    }
-    function add(){
-    document.write("Sum of Matrix:<br>");
-    for(i=0; i<3; i++)
-    {
-     for(j=0; j<3; j++)
-     {
-      arr3[i][j] = arr1[i][j] + arr2[i][j];
-      document.write(arr3[i][j] +" ");
-     }
-     document.write("<br>");
-    }
-    }
-    function subtract(){
-    document.write("Subtract of Matrix:<br>");
-    for(i=0; i<3; i++)
-    {
-     for(j=0; j<3; j++)
-     {
-      arr3[i][j] = arr1[i][j] - arr2[i][j];
-      document.write(arr3[i][j] +" ");
-     }
-     document.write("<br>");
-    }
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </script>
 </html>

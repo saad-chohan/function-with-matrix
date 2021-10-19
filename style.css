@@ -1,0 +1,16 @@
+/* #div1{
+text-align: center;
+margin-top: 0px;
+display: block;
+}
+#div2{
+    text-align: right;
+    margin-top: 0px;
+    }
+    #div3{
+        text-align: left;
+        } */
+        .container{
+            display: flex;
+            justify-content: center;
+        }
