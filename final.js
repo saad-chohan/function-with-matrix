@@ -11,9 +11,9 @@ var arr2 = [
 ];
 
 var arr3 = [
-   // [0,0,0],
-   // [0,0,0],
-   // [0,0,0]
+   [0,0,0],
+   [0,0,0],
+   [0,0,0]
 ];
 
 function add(){
@@ -95,6 +95,7 @@ function sub(){
     arr3[i] = (Number(arr1[i][j])  - Number(arr2[i][j])); 
     document.write (arr3[i]);   
   }
+
   document.write("<br>")
   
   }
@@ -175,13 +176,26 @@ function div(){
       arr1[i][j] = (arr1[i][j] == '') ? 0 : arr1[i][j];
       arr2[i][j] = (arr2[i][j] == '') ? 0 : arr2[i][j];
   
-      arr3[i] = (Number(arr1[i][j])  / Number(arr2[i][j])); 
-      document.write (arr3[i]);   
+      arr3[i][j] = (Number(arr1[i][j])  / Number(arr2[i][j])); 
+      // document.write (arr3[i]);   
   }
-  document.write("<br>")
+//   document.write("<br>")
   
   } 
+
+  arr3[0][0] = document.getElementById("r_0_0").value
+   arr3[0][1] = document.getElementById("r_0_1").value
+   arr3[0][2] = document.getElementById("r_0_2").value
+   arr3[1][0] = document.getElementById("r_1_0").value
+   arr3[1][1] = document.getElementById("r_1_1").value
+   arr3[1][2] = document.getElementById("r_1_2").value
+   arr3[2][0] = document.getElementById("r_2_0").value
+   arr3[2][1] = document.getElementById("r_2_1").value
+   arr3[2][2] = document.getElementById("r_2_2").value
+
   }
+
+  //document.getElementsById("matrix 3 id").value = arr3[0][0]
 
 
 
